@@ -1,0 +1,16 @@
+{
+	"nom":"Terminator",
+	"description":"IA",
+	"prix":50,
+	"categorie":[Action,Aventure],
+	"auteur":"Bugisoft",
+	"Joueurs":[{"avis":"nul","notes":0},{}]
+},
+{
+	"nom":"Terminator",
+	"description":"IA",
+	"prix":50,
+	"categorie":[Action,Aventure],
+	"auteur":"Bugisoft",
+	"Joueurs":[{"avis":"nul","notes":0}]
+}
