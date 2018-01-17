@@ -1,16 +1,80 @@
 {
-	"nom":"Terminator",
-	"description":"IA",
-	"prix":50,
-	"categorie":[Action,Aventure],
-	"auteur":"Bugisoft",
-	"Joueurs":[{"avis":"nul","notes":0},{}]
-},
+	"nom":"Sais Pas",
+	"description":"Horreur",
+	"prix":12.78,
+	"categorie":["Sport","horreur"],
+	"auteur":"tuninja",
+	"Joueurs":[{"avis":"d'grenier","notes":6}]
+}
 {
-	"nom":"Terminator",
-	"description":"IA",
-	"prix":50,
-	"categorie":[Action,Aventure],
-	"auteur":"Bugisoft",
-	"Joueurs":[{"avis":"nul","notes":0}]
+	"nom":"SSJ1",
+	"description":"jeu de Combat",
+	"prix":70,
+	"categorie":["Combat","Jeu de role"],
+	"auteur":"Lee sensei 3",
+	"Joueurs":[{"avis":"En attente d'une suite","notes":8},{"avis":"Tres prometteur","notes":9},{"avis":"Passe bien le temps","notes":7},{"avis":"Tres bon","notes":9.5}]
+}
+{
+	"nom":"SSJ2",
+	"description":"jeu de Combat",
+	"prix":70,
+	"categorie":["Combat","Jeu de role"],
+	"auteur":"Lee sensei 3",
+	"Joueurs":[{"avis":"En attente d'une suite...","notes":8},{"avis":"Passe bien le temps ! ","notes":7},{"avis":"Tres bon","notes":9.5},{"avis":"... Pas de SSJ3","notes":9}]
+}
+{
+	"nom":"BattleFront 2",
+	"description":"Jeu de hasard",
+	"prix":90,
+	"categorie":["hasard","PayToWin"],
+	"auteur":"IA",
+	"Joueurs":[{"avis":"J'ai perdu plus de 5000 balles !","notes":1},{"avis":"Apres 3 mois de jeu intensif, je n'ai même pas débloqué la premiere mission","notes":3}]
+}
+{
+	"nom":"No Man Sky",
+	"description":"Baladez-vous dans l'espace et découvrez un vaste univers.",
+	"prix":60,
+	"categorie":["Jeu de rôle d'action","Aventure"],
+	"auteur":"Gareth Boum",
+	"Joueurs":[{"avis":"J'ai un t-rex Trisomique","notes":6},{"avis":"Tres Jolie mais manque encore de contenu","notes":7}]
+}
+{
+	"nom":"Starwal",
+	"description":"Customisez votre narwal et battez-vous entre amis",
+	"prix":10,
+	"categorie":["Action"],
+	"auteur":"Breakfall",
+	"Joueurs":[{"avis":"C'est vraiment n'importe quoi ! ","notes":10},{"avis":"Pray de sun !","notes":9}]
+}
+{
+	"nom":"Portal",
+	"description":"Jeu vidéo de réflexion et d'action en vue à la première personne",
+	"prix":15,
+	"categorie":["Action","Puzzle","reflexion"],
+	"auteur":"Valve",
+	"Joueurs":[{"avis":"Tres court mais vraiment tres bon","notes":10},{"avis":"Vivement une suite ! ","notes":10}]
+}
+{
+	"nom":"Portal 2",
+	"description":"Jeu vidéo de réflexion et d'action en vue à la première personne",
+	"prix":25,
+	"categorie":["Action","Puzzle","reflexion"],
+	"auteur":"Valve",
+	"Joueurs":[{"avis":"Excellent ! plus long que le premier du nom et l'histoire .. ! ","notes":10},{"avis":"Tres bon jeu, le local est relativement bien aussi","notes":10}]
+}
+{
+	"nom":"Lagg",
+	"description":"Simulateur de lagg",
+	"prix":85,
+	"categorie":["Simulation"],
+	"auteur":"SCS Software",
+	"Joueurs":[{"avis":"relativement lent ! je déconseille","notes":4},{"avis":"Je n'arrive pas à arreter.","notes":8}]
+}
+{
+	"nom":"Mountain",
+	"description":"Simulateur de montagne",
+	"prix":70,
+	"categorie":["Simulation"],
+	"auteur":"David OReilly",
+	"Joueurs":[{"avis":"J'suis une montagne ahahahahah","notes":7},{"avis":"J'ai pas compris le principe","notes":3}]
 }
