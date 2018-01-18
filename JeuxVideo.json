@@ -78,3 +78,115 @@
 	"auteur":"David OReilly",
 	"Joueurs":[{"avis":"J'suis une montagne ahahahahah","notes":7},{"avis":"J'ai pas compris le principe","notes":3}]
 }
+
+
+
+{
+	"nom":"Worms",
+	"description":"Massacre entre vers de terre",
+	"prix":50,
+	"categorie":["Action"],
+	"auteur":"Team 17",
+	"Joueurs":[{"avis":"nul","notes":0},{"avis":"trop bien","notes":18}]
+}
+
+{
+	"nom":"L'aigle",
+	"description":"Jeu de rythme",
+	"prix":30,
+	"categorie":["Action","Danse"],
+	"auteur":"Michel Vedette",
+	"Joueurs":[{"avis":"Parfait !","notes":20}]
+}
+
+{
+	"nom":"Call of duty world war 2",
+	"description":"Jeu de guerre",
+	"prix":70,
+	"categorie":["Action","Vue Subjective"],
+	"auteur":"Activision",
+	"Joueurs":[{"avis":"Pas mal","notes":15},{"avis":"mou","notes":8}]
+}
+
+{
+	"nom":"Mario Odyssey",
+	"description":"Jeu de plate-formes",
+	"prix":50,
+	"categorie":["Action","Aventure"],
+	"auteur":"Nintendo",
+	"Joueurs":[{"avis":"Génial !","notes":17}]
+}
+
+{
+	"nom":"Hotline Miami",
+	"description":"Jeu difficile",
+	"prix":20,
+	"categorie":["Action"],
+	"auteur":"Devolver Digital",
+	"Joueurs":[{"avis":"Sanglant mais trop court !","notes":14}]
+}
+
+{
+	"nom":"Fifa 2018",
+	"description":"Simulation de football",
+	"prix":60,
+	"categorie":["Sport","Simulation"],
+	"auteur":"EA",
+	"Joueurs":[{"avis":"Pas trop de nouveautés","notes":12},{"avis":"Toujours efficace","notes":15}]
+}
+
+{
+	"nom":"XCOM",
+	"description":"Empêchez l'invasion extra-terrestre et sauvez l'humanité",
+	"prix":40,
+	"categorie":["Action","Strategie"],
+	"auteur":"2K Games",
+	"Joueurs":[{"avis":"Jeu au top !","notes":18},{"avis":"Un peu trop dur à mon goût","notes":10}]
+}
+
+{
+	"nom":"God of war 4",
+	"description":"Réincarnez Kratos, dieu de la guerre, après les évènement de God of war 3",
+	"prix":60,
+	"categorie":["Action","Aventure","Plate-formes"],
+	"auteur":"Sony",
+	"Joueurs":[{"avis":"Le retour du dieu de la guerre ","notes":16},{"avis":"Bof, ça se laisse jouer","notes":12}]
+}
+
+{
+	"nom":"Star wars Battlefront 2",
+	"description":"Jeu d'action sur l'univers star wars",
+	"prix":70,
+	"categorie":["Action","Multijoueurs"],
+	"auteur":"EA",
+	"Joueurs":[{"avis":"Une honte","notes":1},{"avis":"Histoire complètement nulle","notes": 5},{"avis":"Prêt à ouvrir votre porte-feuilles pour gagner ?","notes":2},{"avis":"Pas si mauvais que ça","notes":10}]
+}
+
+{
+	"nom":"Assassin's creed Origins",
+	"description":"Jeu d'Aventure en Egypte ancienne",
+	"prix":50,
+	"categorie":["Action","Aventure"],
+	"auteur":"Ubisoft",
+	"Joueurs":[{"avis":"Magnifique !","notes":16},{"avis":"Il ressemble trop aux anciens","notes":12},{"avis":"On s'ennui !","notes":8}]
+}
+
+{
+	"nom":"Resident Evil 7",
+	"description":"Retourner dans le monde horrifique de Resident evil",
+	"prix":60,
+	"categorie":["Survival horror","Action"],
+	"auteur":"Capcom",
+	"Joueurs":[{"avis":"Assez flippant et glauque","notes":15},{"avis":"Histoire tiré par les cheveux","notes":7}]
+}
+
+nombre de jeux avec une note moyenne supérieur à 10
+Classement par note moyenne
+
+
+Map reduce nombre de jeux par categorie
+
+ 
+db.Projet.find($or{action,aventure})
+db.Projet.find().count()
+db.Projet.aggregate
