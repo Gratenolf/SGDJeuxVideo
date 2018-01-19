@@ -180,6 +180,14 @@
 	"Joueurs":[{"avis":"Assez flippant et glauque","notes":15},{"avis":"Histoire tiré par les cheveux","notes":7}]
 }
 
+{
+	"nom":"Mario kart",
+	"description":"Amusez-vous avec vos amis sur mario kart !",
+	"prix":50,
+	"categorie":["Course","Multijoueurs"],
+	"auteur":"Nintendo"
+}
+
 nombre de jeux avec une note moyenne supérieur à 10
 Classement par note moyenne
 
