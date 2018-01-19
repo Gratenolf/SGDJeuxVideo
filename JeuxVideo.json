@@ -4,7 +4,7 @@
 	"prix":12.78,
 	"categorie":["Sport","horreur"],
 	"auteur":"tuninja",
-	"Joueurs":[{"avis":"d'grenier","notes":6}]
+	"Joueurs":[{"pseudo":"titouan93","avis":"d'grenier","notes":6}]
 }
 {
 	"nom":"SSJ1",
@@ -12,7 +12,7 @@
 	"prix":70,
 	"categorie":["Combat","Jeu de role"],
 	"auteur":"Lee sensei 3",
-	"Joueurs":[{"avis":"En attente d'une suite","notes":8},{"avis":"Tres prometteur","notes":9},{"avis":"Passe bien le temps","notes":7},{"avis":"Tres bon","notes":9.5}]
+	"Joueurs":[{"pseudo":"SuperFrost","avis":"En attente d'une suite","notes":8},{"pseudo":"Eugene","avis":"Tres prometteur","notes":9},{"pseudo":"c3l1n3","avis":"Passe bien le temps","notes":7},{"pseudo":"GodZilla","avis":"Tres bon","notes":9.5}]
 }
 {
 	"nom":"SSJ2",
@@ -20,7 +20,7 @@
 	"prix":70,
 	"categorie":["Combat","Jeu de role"],
 	"auteur":"Lee sensei 3",
-	"Joueurs":[{"avis":"En attente d'une suite...","notes":8},{"avis":"Passe bien le temps ! ","notes":7},{"avis":"Tres bon","notes":9.5},{"avis":"... Pas de SSJ3","notes":9}]
+	"Joueurs":[{"pseudo":"SuperFrost","avis":"En attente d'une suite...","notes":8},{"pseudo":"c3l1n3","avis":"Passe bien le temps ! ","notes":7},{"pseudo":"KamiSama","avis":"Tres bon","notes":9.5},{"pseudo":"Leo","avis":"... Pas de SSJ3","notes":9}]
 }
 {
 	"nom":"BattleFront 2",
@@ -28,7 +28,7 @@
 	"prix":90,
 	"categorie":["hasard","PayToWin"],
 	"auteur":"IA",
-	"Joueurs":[{"avis":"J'ai perdu plus de 5000 balles !","notes":1},{"avis":"Apres 3 mois de jeu intensif, je n'ai même pas débloqué la premiere mission","notes":3}]
+	"Joueurs":[{"pseudo":"LukeSkyWalker","avis":"J'ai perdu plus de 5000 balles !","notes":1},{"pseudo":"SaltMaster","avis":"Apres 3 mois de jeu intensif, je n'ai même pas débloqué la premiere mission","notes":3}]
 }
 {
 	"nom":"No Man Sky",
@@ -36,7 +36,7 @@
 	"prix":60,
 	"categorie":["Jeu de rôle d'action","Aventure"],
 	"auteur":"Gareth Boum",
-	"Joueurs":[{"avis":"J'ai un t-rex Trisomique","notes":6},{"avis":"Tres Jolie mais manque encore de contenu","notes":7}]
+	"Joueurs":[{"pseudo":"c3l1n3","avis":"J'ai un t-rex Trisomique","notes":6},{"pseudo":"KamiSama","avis":"Tres Jolie mais manque encore de contenu","notes":7}]
 }
 {
 	"nom":"Starwal",
@@ -44,7 +44,7 @@
 	"prix":10,
 	"categorie":["Action"],
 	"auteur":"Breakfall",
-	"Joueurs":[{"avis":"C'est vraiment n'importe quoi ! ","notes":10},{"avis":"Pray de sun !","notes":9}]
+	"Joueurs":[{"pseudo":"SuperFrost","avis":"C'est vraiment n'importe quoi ! ","notes":10},{"pseudo":"Eugene","avis":"Pray de sun !","notes":9}]
 }
 {
 	"nom":"Portal",
@@ -52,7 +52,7 @@
 	"prix":15,
 	"categorie":["Action","Puzzle","reflexion"],
 	"auteur":"Valve",
-	"Joueurs":[{"avis":"Tres court mais vraiment tres bon","notes":10},{"avis":"Vivement une suite ! ","notes":10}]
+	"Joueurs":[{"pseudo":"SuperFrost","avis":"Tres court mais vraiment tres bon","notes":10},{"pseudo":"SaltMaster","avis":"Vivement une suite ! ","notes":10}]
 }
 {
 	"nom":"Portal 2",
@@ -60,7 +60,7 @@
 	"prix":25,
 	"categorie":["Action","Puzzle","reflexion"],
 	"auteur":"Valve",
-	"Joueurs":[{"avis":"Excellent ! plus long que le premier du nom et l'histoire .. ! ","notes":10},{"avis":"Tres bon jeu, le local est relativement bien aussi","notes":10}]
+	"Joueurs":[{"pseudo":"SuperFrost","avis":"Excellent ! plus long que le premier du nom et l'histoire .. ! ","notes":10},{"pseudo":"GodZilla","avis":"Tres bon jeu, le local est relativement bien aussi","notes":10}]
 }
 {
 	"nom":"Lagg",
@@ -68,7 +68,7 @@
 	"prix":85,
 	"categorie":["Simulation"],
 	"auteur":"SCS Software",
-	"Joueurs":[{"avis":"relativement lent ! je déconseille","notes":4},{"avis":"Je n'arrive pas à arreter.","notes":8}]
+	"Joueurs":[{"pseudo":"SaltMaster","avis":"relativement lent ! je déconseille","notes":4},{"pseudo":"Eugene","avis":"Je n'arrive pas à m'arreter.","notes":8}]
 }
 {
 	"nom":"Mountain",
@@ -76,7 +76,7 @@
 	"prix":70,
 	"categorie":["Simulation"],
 	"auteur":"David OReilly",
-	"Joueurs":[{"avis":"J'suis une montagne ahahahahah","notes":7},{"avis":"J'ai pas compris le principe","notes":3}]
+	"Joueurs":[{"pseudo":"SuperFrost","avis":"J'suis une montagne ahahahahah","notes":7},{"pseudo":"c3l1n3","avis":"J'ai pas compris le principe","notes":3}]
 }
 
 
@@ -187,14 +187,3 @@
 	"categorie":["Course","Multijoueurs"],
 	"auteur":"Nintendo"
 }
-
-nombre de jeux avec une note moyenne supérieur à 10
-Classement par note moyenne
-
-
-Map reduce nombre de jeux par categorie
-
- 
-db.Projet.find($or{action,aventure})
-db.Projet.find().count()
-db.Projet.aggregate
