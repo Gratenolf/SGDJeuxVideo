@@ -19,3 +19,6 @@ https://www.mkyong.com/mongodb/mongodb-find-all-documents-where-an-array-list-si
 
 
 https://docs.mongodb.com/manual/core/map-reduce/
+
+
+https://docs.mongodb.com/v3.0/tutorial/map-reduce-examples/
