@@ -1,11 +1,16 @@
+<<<<
+Commandes principales : 
+ssh nomlogin@mongo
 
-//nombre de jeux avec une note moyenne supérieur à 10
-//Classement par note moyenne
+Dans le répertoire de travail:
+mongoimport --db USER --collection JeuxVideo --file JeuxVideo.json
+
+connexion MongoDB:
+mongo –u nomlogin –p
+use nomlogin
+>>>>
 
 
-Map reduce nombre de jeux par categorie
-
- 
-db.Projet.find($or{action,aventure})
-db.Projet.find().count()
+db.Projet.find({$or[{"categorie":"action"},{"categorie":"aventure"}]});
+db.Projet.find({"prix":{$gte:30}}).count();
 db.Projet.aggregate
