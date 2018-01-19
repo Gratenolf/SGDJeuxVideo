@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 //nombre de jeux avec une note moyenne supérieur à 10
 //Classement par note moyenne
 
@@ -19,4 +17,3 @@ db.Projet.aggregate({$match:{"":{exists:true,"$ne":""}},{$group})
 db.Projet.find({$or[{"categorie":"action"},{"categorie":"aventure"}]});
 db.Projet.find({"prix":{$gte:30}}).count();
 db.Projet.aggregate
->>>>>>> cf9c8e4694034508f45d632f1bbbf640976a5fb0
