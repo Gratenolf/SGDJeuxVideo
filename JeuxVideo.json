@@ -187,6 +187,7 @@
 	"categorie":["Course","Multijoueurs"],
 	"auteur":"Nintendo"
 }
+<<<<<<< HEAD
 
 nombre de jeux avec une note moyenne supérieur à 10
 Classement par note moyenne
@@ -198,3 +199,5 @@ Map reduce nombre de jeux par categorie
 db.Projet.find($or[{"categorie":"action"},{"categorie":aventure}]);
 db.Projet.find("prix":{$gte:{"prix":30}}).count()
 db.Projet.aggregate
+=======
+>>>>>>> 9dda3694ff2adf4a077567b6ec65a8538ed90574

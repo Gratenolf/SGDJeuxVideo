@@ -1,0 +1,11 @@
+
+//nombre de jeux avec une note moyenne supérieur à 10
+//Classement par note moyenne
+
+
+Map reduce nombre de jeux par categorie
+
+ 
+db.Projet.find($or{action,aventure})
+db.Projet.find().count()
+db.Projet.aggregate
