@@ -10,11 +10,64 @@ Classement par note moyenne
 
 Map reduce nombre de jeux par categorie
 
+//1.Trouve les jeux d'action ou d'aventure
+db.Projet.aggregate({$unwind:"$Joueurs"},{$group:{_id:"$Joueurs",total:{$sum:1}}},{$count:"Result"});
+db.Projet.find({$or:[{$elemMatch:{"categorie":"action"}},{$elemMatch:{"categorie":"aventure"}}]});
 
-db.Projet.find({$or[{"categorie":"action"},{"categorie":"aventure"}]});
-db.Projet.find({$and[{"categorie":"action"},{"prix":{$lte:30}]}});
+db.Projet.aggregate({$unwind:"$categorie"},{$group:{_id:{categorie:"$categorie",nom:"$nom"}}});
+db.Projet.find({"Joueurs": { $elemMatch:{"categorie":"Action"}}});
+db.Projet.find({$or:[{"categorie":"Action"},{"categorie":"Aventure"}]});
+
+//2.Trouve les jeux d'action à moins de 30
+db.Projet.find({$and:[{"categorie":"Action"},{"prix":{$lte:30}}]});
+
+//3.Compte les jeux avec un prix supérieur à 30
 db.Projet.find({"prix":{$gte:30}}).count();
+
+//
 db.Projet.aggregate({$match:{"":{exists:true,"$ne":""}},{$group})
+
+
+//4.Mettre à jour un pseudo
+db.Projet.update({"Joueurs.pseudo":"Ripley"},{$set:{"Joueurs.pseudo":"Bishop"}});
+
+
+//5.remove tous les avis d'un pseudo
+db.Projet.remove("Joueurs.pseudo":"DarkSasuke91");
+
+//6.afficher la liste des catégories
+
+
+//7.Afficher les 3 premiers jeux d'un auteur
+db.Projet.find("auteur":"EA").limit(3)
+
+//8.distinct: afficher tous les auteurs 
+db.Projet.distinct("auteur");
+
+//9.Trouver les jeux qui ont plus de 3 avis
+db.Projet.find({Joueurs:{$exists:true},$where:'this.Joueurs.length > 3'});
+
+//10.Afficher top 3 des joueurs donnant un avis
+db.Projet.aggregate();
+
+
+//11.Lister les jeux par note moyenne (orde décroissant)
+db.Projet.aggregate({$unwind:"$Joueurs"},{$group:{_id:"$Joueurs",Moyenne:{$avg:"note"}}});
+
+
+//12.Afficher top 3 des jeux avec meilleure notes moyenne
+
+
+//13.Afficher les jeux possédant un avis de SuperFrost et c3l1n3 avec une note supérieur à 8
+
+db.Projet.aggregate({$match:{$and:[{$or:[{"Joueurs.pseudo":"SuperFrost","Joueurs.pseudo":"c3l1n3"}]},{"Joueurs.note":{$gte:8}}]}});
+
+
+//14.Map reduce: Compter le nombre de jeux par auteur
+
+//15.Compter nombre d'avis par joueur et leur note maximal attribuée
+db.Projet.aggregate({$unwind:"$Joueurs"},{$match:{"Joueurs.note":{$ne:null}}},{$group:{_id:"$Joueurs.pseudo",total:{$sum:1}}});
+
 =======
 db.Projet.find({$or[{"categorie":"action"},{"categorie":"aventure"}]});
 db.Projet.find({"prix":{$gte:30}}).count();
