@@ -22,3 +22,6 @@ https://docs.mongodb.com/manual/core/map-reduce/
 
 
 https://docs.mongodb.com/v3.0/tutorial/map-reduce-examples/
+
+
+https://stackoverflow.com/questions/16319283/map-reduce-with-mongo-on-nested-document
