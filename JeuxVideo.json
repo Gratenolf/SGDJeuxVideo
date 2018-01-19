@@ -4,7 +4,11 @@
 	"prix":12.78,
 	"categorie":["Sport","Horreur"],
 	"auteur":"tuninja",
+<<<<<<< HEAD
 	"Joueurs":[{"pseudo":"titouan93","avis":"d'grenier","note":6}]
+=======
+	"Joueurs":[{"pseudo":"titouan93","avis":"d'grenier","notes":12}]
+>>>>>>> 8389beb28d0ca442bd4fffd805c466e98ed18a91
 }
 {
 	"nom":"SSJ1",
@@ -12,7 +16,11 @@
 	"prix":70,
 	"categorie":["Combat","Jeu de role"],
 	"auteur":"Lee sensei 3",
+<<<<<<< HEAD
 	"Joueurs":[{"pseudo":"SuperFrost","avis":"En attente d'une suite","note":8},{"pseudo":"Eugene","avis":"Tres prometteur","note":9},{"pseudo":"c3l1n3","avis":"Passe bien le temps","note":7},{"pseudo":"GodZilla","avis":"Tres bon","note":9.5}]
+=======
+	"Joueurs":[{"pseudo":"SuperFrost","avis":"En attente d'une suite","notes":16},{"pseudo":"Eugene","avis":"Tres prometteur","notes":18},{"pseudo":"c3l1n3","avis":"Passe bien le temps","notes":14},{"pseudo":"GodZilla","avis":"Tres bon","notes":19}]
+>>>>>>> 8389beb28d0ca442bd4fffd805c466e98ed18a91
 }
 {
 	"nom":"SSJ2",
@@ -20,7 +28,11 @@
 	"prix":70,
 	"categorie":["Combat","Jeu de role"],
 	"auteur":"Lee sensei 3",
+<<<<<<< HEAD
 	"Joueurs":[{"pseudo":"SuperFrost","avis":"En attente d'une suite...","note":8},{"pseudo":"c3l1n3","avis":"Passe bien le temps ! ","note":7},{"pseudo":"KamiSama","avis":"Tres bon","note":9.5},{"pseudo":"Leo","avis":"... Pas de SSJ3","note":9}]
+=======
+	"Joueurs":[{"pseudo":"SuperFrost","avis":"En attente d'une suite...","notes":16},{"pseudo":"c3l1n3","avis":"Passe bien le temps ! ","notes":14},{"pseudo":"KamiSama","avis":"Tres bon","notes":19},{"pseudo":"Leo","avis":"... Pas de SSJ3","notes":18}]
+>>>>>>> 8389beb28d0ca442bd4fffd805c466e98ed18a91
 }
 {
 	"nom":"BattleFront 2",
@@ -28,15 +40,23 @@
 	"prix":90,
 	"categorie":["Hasard","PayToWin"],
 	"auteur":"IA",
+<<<<<<< HEAD
 	"Joueurs":[{"pseudo":"LukeSkyWalker","avis":"J'ai perdu plus de 5000 balles !","note":1},{"pseudo":"SaltMaster","avis":"Apres 3 mois de jeu intensif, je n'ai même pas débloqué la premiere mission","note":3}]
+=======
+	"Joueurs":[{"pseudo":"LukeSkyWalker","avis":"J'ai perdu plus de 5000 balles !","notes":2},{"pseudo":"SaltMaster","avis":"Apres 3 mois de jeu intensif, je n'ai même pas débloqué la premiere mission","notes":6}]
+>>>>>>> 8389beb28d0ca442bd4fffd805c466e98ed18a91
 }
 {
 	"nom":"No Man Sky",
 	"description":"Baladez-vous dans l'espace et découvrez un vaste univers.",
 	"prix":60,
-	"categorie":["Jeu de rôle d'action","Aventure"],
+	"categorie":["Jeu de role","Aventure"],
 	"auteur":"Gareth Boum",
+<<<<<<< HEAD
 	"Joueurs":[{"pseudo":"c3l1n3","avis":"J'ai un t-rex Trisomique","note":6},{"pseudo":"KamiSama","avis":"Tres Jolie mais manque encore de contenu","note":7}]
+=======
+	"Joueurs":[{"pseudo":"c3l1n3","avis":"J'ai un t-rex Trisomique","notes":12},{"pseudo":"KamiSama","avis":"Tres Jolie mais manque encore de contenu","notes":14}]
+>>>>>>> 8389beb28d0ca442bd4fffd805c466e98ed18a91
 }
 {
 	"nom":"Starwal",
@@ -44,7 +64,11 @@
 	"prix":10,
 	"categorie":["Action"],
 	"auteur":"Breakfall",
+<<<<<<< HEAD
 	"Joueurs":[{"pseudo":"SuperFrost","avis":"C'est vraiment n'importe quoi ! ","note":10},{"pseudo":"Eugene","avis":"Pray de sun !","note":9}]
+=======
+	"Joueurs":[{"pseudo":"SuperFrost","avis":"C'est vraiment n'importe quoi ! ","notes":20},{"pseudo":"Eugene","avis":"Pray de sun !","notes":18}]
+>>>>>>> 8389beb28d0ca442bd4fffd805c466e98ed18a91
 }
 {
 	"nom":"Portal",
@@ -52,7 +76,11 @@
 	"prix":15,
 	"categorie":["Action","Puzzle","Reflexion"],
 	"auteur":"Valve",
+<<<<<<< HEAD
 	"Joueurs":[{"pseudo":"SuperFrost","avis":"Tres court mais vraiment tres bon","note":10},{"pseudo":"SaltMaster","avis":"Vivement une suite ! ","note":10}]
+=======
+	"Joueurs":[{"pseudo":"SuperFrost","avis":"Tres court mais vraiment tres bon","notes":20},{"pseudo":"SaltMaster","avis":"Vivement une suite ! ","notes":20}]
+>>>>>>> 8389beb28d0ca442bd4fffd805c466e98ed18a91
 }
 {
 	"nom":"Portal 2",
@@ -60,7 +88,11 @@
 	"prix":25,
 	"categorie":["Action","Puzzle","Reflexion"],
 	"auteur":"Valve",
+<<<<<<< HEAD
 	"Joueurs":[{"pseudo":"SuperFrost","avis":"Excellent ! plus long que le premier du nom et l'histoire .. ! ","note":10},{"pseudo":"GodZilla","avis":"Tres bon jeu, le local est relativement bien aussi","note":10}]
+=======
+	"Joueurs":[{"pseudo":"SuperFrost","avis":"Excellent ! plus long que le premier du nom et l'histoire .. ! ","notes":20},{"pseudo":"GodZilla","avis":"Tres bon jeu, le local est relativement bien aussi","notes":20}]
+>>>>>>> 8389beb28d0ca442bd4fffd805c466e98ed18a91
 }
 {
 	"nom":"Lagg",
@@ -68,7 +100,11 @@
 	"prix":85,
 	"categorie":["Simulation"],
 	"auteur":"SCS Software",
+<<<<<<< HEAD
 	"Joueurs":[{"pseudo":"SaltMaster","avis":"relativement lent ! je déconseille","note":4},{"pseudo":"Eugene","avis":"Je n'arrive pas à m'arreter.","note":8}]
+=======
+	"Joueurs":[{"pseudo":"SaltMaster","avis":"relativement lent ! je déconseille","notes":8},{"pseudo":"Eugene","avis":"Je n'arrive pas à m'arreter.","notes":16}]
+>>>>>>> 8389beb28d0ca442bd4fffd805c466e98ed18a91
 }
 {
 	"nom":"Mountain",
@@ -76,7 +112,11 @@
 	"prix":70,
 	"categorie":["Simulation"],
 	"auteur":"David OReilly",
+<<<<<<< HEAD
 	"Joueurs":[{"pseudo":"SuperFrost","avis":"J'suis une montagne ahahahahah","note":7},{"pseudo":"c3l1n3","avis":"J'ai pas compris le principe","note":3}]
+=======
+	"Joueurs":[{"pseudo":"SuperFrost","avis":"J'suis une montagne ahahahahah","notes":14},{"pseudo":"c3l1n3","avis":"J'ai pas compris le principe","notes":6}]
+>>>>>>> 8389beb28d0ca442bd4fffd805c466e98ed18a91
 }
 
 
