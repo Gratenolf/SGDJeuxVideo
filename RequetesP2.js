@@ -73,3 +73,6 @@ db.JeuxVideo.updateMany({"categorie":"Action"},{$push:{"Joueurs":{"pseudo":"test
 
 //18 renommer l'auteur IA en EA
 db.JeuxVideo.replaceOne({"auteur":"IA"},{"auteur":"EA"});
+
+
+
