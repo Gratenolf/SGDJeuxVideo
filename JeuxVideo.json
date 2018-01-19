@@ -4,7 +4,7 @@
 	"prix":12.78,
 	"categorie":["Sport","Horreur"],
 	"auteur":"tuninja",
-	"Joueurs":[{"pseudo":"titouan93","avis":"d'grenier","notes":12}]
+	"joueurs":[{"pseudo":"titouan93","avis":"d'grenier","notes":12}]
 }
 {
 	"nom":"SSJ1",
@@ -12,7 +12,7 @@
 	"prix":70,
 	"categorie":["Combat","Jeu de role"],
 	"auteur":"Lee sensei 3",
-	"Joueurs":[{"pseudo":"SuperFrost","avis":"En attente d'une suite","notes":16},{"pseudo":"Eugene","avis":"Tres prometteur","notes":18},{"pseudo":"c3l1n3","avis":"Passe bien le temps","notes":14},{"pseudo":"GodZilla","avis":"Tres bon","notes":19}]
+	"joueurs":[{"pseudo":"SuperFrost","avis":"En attente d'une suite","notes":16},{"pseudo":"Eugene","avis":"Tres prometteur","notes":18},{"pseudo":"c3l1n3","avis":"Passe bien le temps","notes":14},{"pseudo":"GodZilla","avis":"Tres bon","notes":19}]
 }
 {
 	"nom":"SSJ2",
@@ -20,7 +20,7 @@
 	"prix":70,
 	"categorie":["Combat","Jeu de role"],
 	"auteur":"Lee sensei 3",
-	"Joueurs":[{"pseudo":"SuperFrost","avis":"En attente d'une suite...","notes":16},{"pseudo":"c3l1n3","avis":"Passe bien le temps ! ","notes":14},{"pseudo":"KamiSama","avis":"Tres bon","notes":19},{"pseudo":"Leo","avis":"... Pas de SSJ3","notes":18}]
+	"joueurs":[{"pseudo":"SuperFrost","avis":"En attente d'une suite...","notes":16},{"pseudo":"c3l1n3","avis":"Passe bien le temps ! ","notes":14},{"pseudo":"KamiSama","avis":"Tres bon","notes":19},{"pseudo":"Leo","avis":"... Pas de SSJ3","notes":18}]
 }
 {
 	"nom":"BattleFront 2",
@@ -28,7 +28,7 @@
 	"prix":90,
 	"categorie":["Hasard","PayToWin"],
 	"auteur":"IA",
-	"Joueurs":[{"pseudo":"LukeSkyWalker","avis":"J'ai perdu plus de 5000 balles !","notes":2},{"pseudo":"SaltMaster","avis":"Apres 3 mois de jeu intensif, je n'ai même pas débloqué la premiere mission","notes":6}]
+	"joueurs":[{"pseudo":"LukeSkyWalker","avis":"J'ai perdu plus de 5000 balles !","notes":2},{"pseudo":"SaltMaster","avis":"Apres 3 mois de jeu intensif, je n'ai même pas débloqué la premiere mission","notes":6}]
 }
 {
 	"nom":"No Man Sky",
@@ -36,7 +36,7 @@
 	"prix":60,
 	"categorie":["Jeu de role","Aventure"],
 	"auteur":"Gareth Boum",
-	"Joueurs":[{"pseudo":"c3l1n3","avis":"J'ai un t-rex Trisomique","notes":12},{"pseudo":"KamiSama","avis":"Tres Jolie mais manque encore de contenu","notes":14}]
+	"joueurs":[{"pseudo":"c3l1n3","avis":"J'ai un t-rex Trisomique","notes":12},{"pseudo":"KamiSama","avis":"Tres Jolie mais manque encore de contenu","notes":14}]
 }
 {
 	"nom":"Starwal",
@@ -44,7 +44,7 @@
 	"prix":10,
 	"categorie":["Action"],
 	"auteur":"Breakfall",
-	"Joueurs":[{"pseudo":"SuperFrost","avis":"C'est vraiment n'importe quoi ! ","notes":20},{"pseudo":"Eugene","avis":"Pray de sun !","notes":18}]
+	"joueurs":[{"pseudo":"SuperFrost","avis":"C'est vraiment n'importe quoi ! ","notes":20},{"pseudo":"Eugene","avis":"Pray de sun !","notes":18}]
 }
 {
 	"nom":"Portal",
@@ -52,7 +52,7 @@
 	"prix":15,
 	"categorie":["Action","Puzzle","Reflexion"],
 	"auteur":"Valve",
-	"Joueurs":[{"pseudo":"SuperFrost","avis":"Tres court mais vraiment tres bon","notes":20},{"pseudo":"SaltMaster","avis":"Vivement une suite ! ","notes":20}]
+	"joueurs":[{"pseudo":"SuperFrost","avis":"Tres court mais vraiment tres bon","notes":20},{"pseudo":"SaltMaster","avis":"Vivement une suite ! ","notes":20}]
 }
 {
 	"nom":"Portal 2",
@@ -60,8 +60,7 @@
 	"prix":25,
 	"categorie":["Action","Puzzle","Reflexion"],
 	"auteur":"Valve",
-
-	"Joueurs":[{"pseudo":"SuperFrost","avis":"Excellent ! plus long que le premier du nom et l'histoire .. ! ","notes":20},{"pseudo":"GodZilla","avis":"Tres bon jeu, le local est relativement bien aussi","notes":20}]
+	"joueurs":[{"pseudo":"SuperFrost","avis":"Excellent ! plus long que le premier du nom et l'histoire .. ! ","notes":20},{"pseudo":"GodZilla","avis":"Tres bon jeu, le local est relativement bien aussi","notes":20}]
 }
 {
 	"nom":"Lagg",
@@ -69,7 +68,7 @@
 	"prix":85,
 	"categorie":["Simulation"],
 	"auteur":"SCS Software",
-	"Joueurs":[{"pseudo":"SaltMaster","avis":"relativement lent ! je déconseille","notes":8},{"pseudo":"Eugene","avis":"Je n'arrive pas à m'arreter.","notes":16}]
+	"joueurs":[{"pseudo":"SaltMaster","avis":"relativement lent ! je déconseille","notes":8},{"pseudo":"Eugene","avis":"Je n'arrive pas à m'arreter.","notes":16}]
 }
 {
 	"nom":"Mountain",
@@ -77,7 +76,7 @@
 	"prix":70,
 	"categorie":["Simulation"],
 	"auteur":"David OReilly",
-	"Joueurs":[{"pseudo":"SuperFrost","avis":"J'suis une montagne ahahahahah","notes":14},{"pseudo":"c3l1n3","avis":"J'ai pas compris le principe","notes":6}]
+	"joueurs":[{"pseudo":"SuperFrost","avis":"J'suis une montagne ahahahahah","notes":14},{"pseudo":"c3l1n3","avis":"J'ai pas compris le principe","notes":6}]
 }
 
 
@@ -88,7 +87,7 @@
 	"prix":50,
 	"categorie":["Action"],
 	"auteur":"Team 17",
-	"Joueurs":[{"pseudo":"JackBaueur","avis":"nul","note":0},{"pseudo":"Magnum","avis":"trop bien","note":18}]
+	"joueurs":[{"pseudo":"JackBaueur","avis":"nul","note":0},{"pseudo":"Magnum","avis":"trop bien","note":18}]
 }
 
 {
@@ -97,7 +96,7 @@
 	"prix":30,
 	"categorie":["Action","Danse"],
 	"auteur":"Michel Vedette",
-	"Joueurs":[{"pseudo":"Magnum","avis":"Parfait !","note":20}]
+	"joueurs":[{"pseudo":"Magnum","avis":"Parfait !","note":20}]
 }
 
 {
@@ -106,7 +105,7 @@
 	"prix":70,
 	"categorie":["Action","Vue Subjective"],
 	"auteur":"Activision",
-	"Joueurs":[{"pseudo":"Data","avis":"Pas mal","note":15},{"pseudo":"Choco","avis":"mou","note":8}]
+	"joueurs":[{"pseudo":"Data","avis":"Pas mal","note":15},{"pseudo":"Choco","avis":"mou","note":8}]
 }
 
 {
@@ -115,7 +114,7 @@
 	"prix":50,
 	"categorie":["Action","Aventure"],
 	"auteur":"Nintendo",
-	"Joueurs":[{"pseudo":"Ripley","avis":"Génial !","note":17}]
+	"joueurs":[{"pseudo":"Ripley","avis":"Génial !","note":17}]
 }
 
 {
@@ -124,7 +123,7 @@
 	"prix":20,
 	"categorie":["Action"],
 	"auteur":"Devolver Digital",
-	"Joueurs":[{"pseudo":"JohnMacclain","avis":"Sanglant mais trop court !","note":14}]
+	"joueurs":[{"pseudo":"JohnMacclain","avis":"Sanglant mais trop court !","note":14}]
 }
 
 {
@@ -133,7 +132,7 @@
 	"prix":60,
 	"categorie":["Sport","Simulation"],
 	"auteur":"EA",
-	"Joueurs":[{"pseudo":"IndianaJ","avis":"Pas trop de nouveautés","note":12},{"pseudo":"LaMouche","avis":"Toujours efficace","note":15}]
+	"joueurs":[{"pseudo":"IndianaJ","avis":"Pas trop de nouveautés","note":12},{"pseudo":"LaMouche","avis":"Toujours efficace","note":15}]
 }
 
 {
@@ -142,7 +141,7 @@
 	"prix":40,
 	"categorie":["Action","Strategie"],
 	"auteur":"2K Games",
-	"Joueurs":[{"pseudo":"Doc","avis":"Jeu au top !","note":18},{"pseudo":"Ripley","avis":"Un peu trop dur à mon goût","note":10}]
+	"joueurs":[{"pseudo":"Doc","avis":"Jeu au top !","note":18},{"pseudo":"Ripley","avis":"Un peu trop dur à mon goût","note":10}]
 }
 
 {
@@ -151,7 +150,7 @@
 	"prix":60,
 	"categorie":["Action","Aventure","Plate-formes"],
 	"auteur":"Sony",
-	"Joueurs":[{"pseudo":"LaMouche","avis":"Le retour du dieu de la guerre ","note":16},{"pseudo":"HellRaiser","avis":"Bof, ça se laisse jouer","note":12}]
+	"joueurs":[{"pseudo":"LaMouche","avis":"Le retour du dieu de la guerre ","note":16},{"pseudo":"HellRaiser","avis":"Bof, ça se laisse jouer","note":12}]
 }
 
 {
@@ -160,7 +159,7 @@
 	"prix":70,
 	"categorie":["Action","Multijoueurs"],
 	"auteur":"EA",
-	"Joueurs":[{"pseudo":"Mel_G","avis":"Une honte","note":1},{"pseudo":"Kyle","avis":"Histoire complètement nulle","note": 5},{"pseudo":"Cartman","avis":"Prêt à ouvrir votre porte-feuilles pour gagner ?","note":2},{"pseudo":"IndianaJ","avis":"Pas si mauvais que ça","note":10}]
+	"joueurs":[{"pseudo":"Mel_G","avis":"Une honte","note":1},{"pseudo":"Kyle","avis":"Histoire complètement nulle","note": 5},{"pseudo":"Cartman","avis":"Prêt à ouvrir votre porte-feuilles pour gagner ?","note":2},{"pseudo":"IndianaJ","avis":"Pas si mauvais que ça","note":10}]
 }
 
 {
@@ -169,7 +168,7 @@
 	"prix":50,
 	"categorie":["Action","Aventure"],
 	"auteur":"Ubisoft",
-	"Joueurs":[{"pseudo":"DarkSasuke91","avis":"Magnifique !","note":16},{"pseudo":"Ripley","avis":"Il ressemble trop aux anciens","note":12},{"pseudo":"Doc","avis":"On s'ennui !","note":8}]
+	"joueurs":[{"pseudo":"DarkSasuke91","avis":"Magnifique !","note":16},{"pseudo":"Ripley","avis":"Il ressemble trop aux anciens","note":12},{"pseudo":"Doc","avis":"On s'ennui !","note":8}]
 }
 
 {
@@ -178,7 +177,7 @@
 	"prix":60,
 	"categorie":["Survival horror","Action"],
 	"auteur":"Capcom",
-	"Joueurs":[{"pseudo":"ProPlayer21","avis":"Assez flippant et glauque","note":15},{"pseudo":"Musclor","avis":"Histoire tiré par les cheveux","note":7}]
+	"joueurs":[{"pseudo":"ProPlayer21","avis":"Assez flippant et glauque","note":15},{"pseudo":"Musclor","avis":"Histoire tiré par les cheveux","note":7}]
 }
 
 {

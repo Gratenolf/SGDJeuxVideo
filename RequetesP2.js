@@ -71,5 +71,42 @@ db.JeuxVideo.updateMany({"categorie":"Action"},{$push:{"Joueurs":{"pseudo":"test
 //17 renommer l'auteur IA en EA
 db.JeuxVideo.replaceOne({"auteur":"IA"},{"auteur":"EA"});
 
+//18 Compter avis pour chaque pseudo
+var map = function(){
+	var TestFinBoucle = this.joueurs.length;
+	for(var idx=0;idx < this.joueurs.length;idx++){
+		var pseudo = this.joueurs[idx].pseudo;
+		var avis = {count:1,avis:this.joueurs[idx].avis}
+		emit(pseudo,avis);
+	}
+};
 
+//19 afficher l'ensemble des jeu par auteur
+var map2 = function(){
+	emit(this.auteur,this.nom);
+};
+var reduce2 = function(auteur, jeu){
+	var av = new Object();
+	av.auteur = auteur;
+	av.jeu = jeu;
+	return av;
+};
+db.JeuxVideo.mapReduce(map2, reduce2, {out:{inline:1}});
+	
+	
+	
+//20 afficher l'ensemble des commentaires affectué par joueur
+db.JeuxVideo.mapReduce(
+	function(){
+		for(var i in this.joueurs)
+			emit(this.joueurs[i].pseudo, this.joueurs[i].avis);
+	},
+	function(joueur,avis){
+		var v = new Object();
+		v.joueur = joueur;
+		v.avis = avis;
+		return v;
+	},
+	{out:{inline:1}}
+);
 
