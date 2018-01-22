@@ -120,4 +120,3 @@ db.JeuxVideo.mapReduce(
 		query:{"categorie":"Action"}
 	}
 );
-
