@@ -16,8 +16,6 @@ use nomlogin
 
 $where
 https://www.mkyong.com/mongodb/mongodb-find-all-documents-where-an-array-list-size-is-greater-than-n/
-<<<<<<< HEAD
-=======
 
 
 https://docs.mongodb.com/manual/core/map-reduce/
@@ -27,4 +25,3 @@ https://docs.mongodb.com/v3.0/tutorial/map-reduce-examples/
 
 
 https://stackoverflow.com/questions/16319283/map-reduce-with-mongo-on-nested-document
->>>>>>> c0581a59aa1ff88e23898188d259c7eb289893c6
