@@ -15,7 +15,7 @@ pipeline = [{"$unwind":"$joueurs"},
 ]
 pprint.pprint(list(jv.aggregate(pipeline)))
 
-print("\nAffichage du nombre de jeux disponible par catégorie : \n")
+print("\nAffichage du nombre de jeux disponible par categorie : \n")
 pipeline2 = [{"$match":{"categorie":{"$ne":"null"}}},
 			{"$unwind":"$categorie"},
 			{"$group":{"_id":"$categorie","count":{"$sum":1}}}
@@ -23,9 +23,11 @@ pipeline2 = [{"$match":{"categorie":{"$ne":"null"}}},
 pprint.pprint(list(jv.aggregate(pipeline2)))
 
 print("\nAffichage de l'ensemble de la collection : \n")
-for i in jv .find() : i
+for i in jv.find() :
+	pprint.pprint(i)
+	print("\n")
 
-print("\nAffichage du nombre d'avis par joueur et leurs note maximal attribuée : \n")
+print("\nAffichage du nombre d'avis par joueur et leurs note maximal attribuee : \n")
 pipeline3 = [{"$unwind":"$joueurs"},
 			{"$match":{"joueurs.note":{"$ne":"null"}}},
 			{"$group":{"_id":"$joueurs.pseudo","total":{"$sum":1}}}
