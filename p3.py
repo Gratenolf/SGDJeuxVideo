@@ -18,8 +18,8 @@ BulkTest = jv.bulk_write([
 			DeleteMany({"prix":50}),
 			InsertOne({"nom":"TestAjoutJeux","description":"TestDescription","prix":50,"categorie":["Action","Multijoueurs"],"auteur":"EA"})
 ])
-
 jv.find_one({"prix":50})
+
 
 print("\nAffichage du top 3 des jeux possedant les meilleurs moyennes : \n")
 pipeline = [{"$unwind":"$joueurs"},
@@ -30,6 +30,7 @@ pipeline = [{"$unwind":"$joueurs"},
 ]
 pprint.pprint(list(jv.aggregate(pipeline)))
 
+
 print("\nAffichage du nombre de jeux disponible par categorie : \n")
 pipeline2 = [{"$match":{"categorie":{"$ne":"null"}}},
 			{"$unwind":"$categorie"},
@@ -39,6 +40,7 @@ pprint.pprint(list(jv.aggregate(pipeline2)))
 
 print("\nAffichage de l'ensemble de la collection : \n")
 for i in jv .find() : i
+
 
 print("\nAffichage du nombre d'avis par joueur et leurs note maximal attribuee : \n")
 pipeline3 = [{"$unwind":"$joueurs"},
@@ -61,7 +63,6 @@ cursorb = jv.distinct("auteur")
 print(cursorb)
 
 print("\nAffichage des jeux de l'auteur EA : \n")
-
 chaine =[]
 for doc in jv.find({"auteur":"EA"}):
 	print(doc)
