@@ -11,7 +11,11 @@ db.JeuxVideo.find({"prix":{$gte:30}}).count();
 
 
 //4 suppression du pseudo "DarkSasuke91"
+<<<<<<< HEAD
 db.JeuxVideo.remove({"Joueurs.pseudo":"DarkSasuke91"});
+=======
+db.Projet.remove({"joueurs.pseudo":"DarkSasuke91"});
+>>>>>>> c0581a59aa1ff88e23898188d259c7eb289893c6
 
 //5 Afficher la liste complete des catégories existantes
 db.JeuxVideo.distinct("categorie");
@@ -25,22 +29,30 @@ db.JeuxVideo.distinct("auteur");
 
 
 //8 Afficher les noms des jeux possedant plus de 3 avis
+<<<<<<< HEAD
 db.JeuxVideo.find({Joueurs:{$exists:true},$where:'this.Joueurs.length > 3'});
+=======
+db.Projet.find({Joueurs:{$exists:true},$where:'this.joueurs.length > 3'});
+>>>>>>> c0581a59aa1ff88e23898188d259c7eb289893c6
 
 //9 Afficher le top 3 des joueurs donnant un avis
-db.JeuxVideo.aggregate({$match:{"Joueurs.pseudo":{$ne:null}}},{$unwind:"$Joueurs"},{$group:{_id:"$Joueurs.pseudo",total:{$sum:1}}},{$sort:{total:-1}},{$limit:3});
+db.JeuxVideo.aggregate({$match:{"joueurs.pseudo":{$ne:null}}},{$unwind:"$joueurs"},{$group:{_id:"$joueurs.pseudo",total:{$sum:1}}},{$sort:{total:-1}},{$limit:3});
 
 
 //10 Lister les jeux suivant leurs moyennes par ordre décroissant
-db.JeuxVideo.aggregate({$unwind:"$Joueurs"},{$match:{"Joueurs.notes":{$ne:null}}},{$group:{_id:"$nom",moy:{$avg:"$Joueurs.notes"}}},{$sort:{moy:-1}});
+db.JeuxVideo.aggregate({$unwind:"$joueurs"},{$match:{"joueurs.notes":{$ne:null}}},{$group:{_id:"$nom",moy:{$avg:"$joueurs.notes"}}},{$sort:{moy:-1}});
 
 
 //11 Afficher le top 3 des jeux possedant les meilleurs moyennes
-db.JeuxVideo.aggregate({$unwind:"$Joueurs"},{$match:{"Joueurs.notes":{$ne:null}}},{$group:{_id:"$nom",moy:{$avg:"$Joueurs.notes"}}},{$sort:{moy:-1}},{$limit:3});
+db.JeuxVideo.aggregate({$unwind:"$joueurs"},{$match:{"joueurs.notes":{$ne:null}}},{$group:{_id:"$nom",moy:{$avg:"$joueurs.notes"}}},{$sort:{moy:-1}},{$limit:3});
 
 
 //12 Afficher les jeux d'action possedant un avis de "SuperFrost" ou "c3l1n3" et une note supérieur à 8
+<<<<<<< HEAD
 db.JeuxVideo.aggregate({$match:{$and:[{$or:[{"Joueurs.pseudo":"SuperFrost","Joueurs.pseudo":"c3l1n3"}]},{"Joueurs.note":{$gte:8}}]}});
+=======
+db.Projet.aggregate({$match:{$and:[{$or:[{"joueurs.pseudo":"SuperFrost","joueurs.pseudo":"c3l1n3"}]},{"joueurs.note":{$gte:8}}]}});
+>>>>>>> c0581a59aa1ff88e23898188d259c7eb289893c6
 
 //13 Compter le nombre de jeux par auteurs
 var mapR = function(){
@@ -58,14 +70,14 @@ db.JeuxVideo.mapReduce(mapR, reduceR, {out:{inline:1}});
 
 
 //14 Compter le nombre d'avis par joueur et leurs note maximal attribuée
-db.Projet.aggregate({$unwind:"$Joueurs"},{$match:{"Joueurs.note":{$ne:null}}},{$group:{_id:"$Joueurs.pseudo",total:{$sum:1}}});
+db.Projet.aggregate({$unwind:"$joueurs"},{$match:{"joueurs.note":{$ne:null}}},{$group:{_id:"$joueurs.pseudo",total:{$sum:1}}});
 
 //15 Compter le nombre de jeux par catégorie
 db.JeuxVideo.aggregate({$match:{"categorie":{$ne:null}}},{$unwind:"$categorie"},{$group:{_id:"$categorie",count:{$sum:1}}});
 
 
 //16 ajouter à chaque jeu d'Action un Joueur nommé testAvis donnant une note de 8 et un avis "testAvis"
-db.JeuxVideo.updateMany({"categorie":"Action"},{$push:{"Joueurs":{"pseudo":"testAvis","avis":"testAvis","notes":8}}},{multi:true});
+db.JeuxVideo.updateMany({"categorie":"Action"},{$push:{"joueurs":{"pseudo":"testAvis","avis":"testAvis","notes":8}}},{multi:true});
 
 
 //17 renommer l'auteur IA en EA
@@ -87,6 +99,7 @@ var reduce = function(auteur,pJeux){
 };
 db.JeuxVideo.mapReduce(map, reduce, {out:{inline:1}});
 
+<<<<<<< HEAD
 //19 Compter avis pour chaque pseudo
 var map = function(){
 	var TestFinBoucle = this.Joueurs.length;
@@ -115,5 +128,55 @@ var map = function(){
 		emit({count:1,P[0]},);
 	}
 }
+=======
+//18 Compter le nombre total d'avis pour chaque pseudo
+var map = function(){
+	for(var idx in this.joueurs){
+		var pseudo = this.joueurs[idx].pseudo;
+		var avis = {count:1};
+		emit(pseudo,avis);
+	}
+};
+var reduce = function(pseudo,avis){
+	var avisrd = {count : 0};
+	for(var i = 0; i < avis.length; i++)
+		avisrd.count += avis[i].count;
+	return avisrd;
+};
+db.JeuxVideo.mapReduce(map, reduce, {out:{inline:1}});
+
+
+//19 afficher l'ensemble des jeu par auteur
+var map2 = function(){
+	emit(this.auteur,this.nom);
+};
+var reduce2 = function(auteur, jeu){
+	var av = new Object();
+	av.auteur = auteur;
+	av.jeu = jeu;
+	return av;
+};
+db.JeuxVideo.mapReduce(map2, reduce2, {out:{inline:1}});
+	
+	
+	
+//20 afficher l'ensemble des avis donné pour chaque joueur sur des jeux d'action
+db.JeuxVideo.mapReduce(
+	function(){
+		for(var i in this.joueurs)
+			emit(this.joueurs[i].pseudo, this.joueurs[i].avis);
+	},
+	function(joueur,avis){
+		var v = new Object();
+		v.joueur = joueur;
+		v.avis = avis;
+		return v;
+	},
+	{
+		out:{inline:1},
+		query:{"categorie":"Action"}
+	}
+);
+>>>>>>> c0581a59aa1ff88e23898188d259c7eb289893c6
 
 var reduce = function()
