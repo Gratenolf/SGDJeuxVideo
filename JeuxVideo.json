@@ -132,7 +132,7 @@
 	"prix":60,
 	"categorie":["Sport","Simulation"],
 	"auteur":"EA",
-	"joueurs":[{"pseudo":"IndianaJ","avis":"Pas trop de nouveautés","note":12},{"pseudo":"LaMouche","avis":"Toujours efficace","note":15}]
+	"joueurs":[{"pseudo":"IndianaJ","avis":"Pas trop de nouveautes","note":12},{"pseudo":"LaMouche","avis":"Toujours efficace","note":15}]
 }
 
 {
@@ -159,7 +159,7 @@
 	"prix":70,
 	"categorie":["Action","Multijoueurs"],
 	"auteur":"EA",
-	"joueurs":[{"pseudo":"Mel_G","avis":"Une honte","note":1},{"pseudo":"Kyle","avis":"Histoire complètement nulle","note": 5},{"pseudo":"Cartman","avis":"Prêt à ouvrir votre porte-feuilles pour gagner ?","note":2},{"pseudo":"IndianaJ","avis":"Pas si mauvais que ça","note":10}]
+	"joueurs":[{"pseudo":"Mel_G","avis":"Une honte","note":1},{"pseudo":"Kyle","avis":"Histoire completement nulle","note": 5},{"pseudo":"Cartman","avis":"Pret à ouvrir votre porte-feuilles pour gagner ?","note":2},{"pseudo":"IndianaJ","avis":"Pas si mauvais que ça","note":10}]
 }
 
 {

@@ -14,6 +14,9 @@ mongoimport --db USER --collection JeuxVideo --file JeuxVideo.json
 mongo –u nomlogin –p
 use nomlogin
 
+-Connexion pymongo
+python3
+
 $where
 https://www.mkyong.com/mongodb/mongodb-find-all-documents-where-an-array-list-size-is-greater-than-n/
 
