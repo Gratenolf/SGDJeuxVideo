@@ -8,8 +8,8 @@ import io
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 c=MongoClient()
-db=c.ah154489
-db
+db=c.ng452532
+
 jv=db.JeuxVideo
 import pprint
 
@@ -62,8 +62,52 @@ print("\nAffichage de l'ensemble des auteurs : \n")
 cursorb = jv.distinct("auteur")
 print(cursorb)
 
-print("\nAffichage des jeux de l'auteur EA : \n")
-chaine =[]
-for doc in jv.find({"auteur":"EA"}):
-	print(doc)
-	
+
+
+
+
+
+
+def recherche(editeur):
+	print("\nListe des jeux de l'editeur ",editeur," : ")
+	for i in jv.find({"auteur":editeur}):
+		print(" -",i["nom"])
+		print("\tPrix : ",i["prix"],"euro")
+		print("\tCategorie : ")
+		for j in i["categorie"]:
+			print("\t - ",j)
+
+recherche("Nintendo")
+recherche("Michel vedette")
+recherche("Valve")
+
+def recherche(editeur, categorie):
+	print("\nListe des jeux de l'editeur ",editeur," sur la categorie ",categorie," : ")
+	for i in jv.find({"auteur":editeur,"categorie":categorie}):
+		print(" -",i["nom"])
+		print("\tPrix : ",i["prix"],"euro")
+
+recherche("EA","Action")
+recherche("Lee sensei 3","Action")
+
+
+def rechercheJeu(jeu):
+	print("\n",jeu," : ")
+	for i in jv.find({"nom":jeu}):
+		print("\tDescription : ",i["description"])
+		print("\tPrix : ",i["prix"],"euro")
+		print("\tCategorie : ")
+		for j in i["categorie"]:
+			print("\t - ",j)
+		print("\n\tavis : ")
+		for j in i["joueurs"]:
+			print("\t\t",j["pseudo"])
+			print("\t\tNote : ",j["notes"])
+			print("\t\tCommentaire : ",j["avis"],"\n")
+
+rechercheJeu("Mountain")
+rechercheJeu("Portal 2")
+
+
+
+
